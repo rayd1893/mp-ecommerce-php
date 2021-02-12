@@ -4,7 +4,8 @@
 require __DIR__ .  '/vendor/autoload.php';
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('TEST-405779608341078-021203-794079c300ab2fce8ed5b3350d546c63-672452594');
+MercadoPago\SDK::setIntegratorId("dev_2e4ad5dd362f11eb809d0242ac130004");
+MercadoPago\SDK::setAccessToken('APP_USR-8208253118659647-112521-dd670f3fd6aa9147df51117701a2082e-677408439');
 
 $payer = new MercadoPago\Payer();
   $payer->name = "Lalo";
