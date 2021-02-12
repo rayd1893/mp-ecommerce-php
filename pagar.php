@@ -36,8 +36,9 @@ $item = new MercadoPago\Item();
 $item->title = 'Mi producto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
-$preference->payer = array($payer);
+
 $preference->items = array($item);
+$preference->payer = $payer;
 $preference->save();
 ?>
 
