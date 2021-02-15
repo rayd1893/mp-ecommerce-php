@@ -202,7 +202,7 @@ $preference->save();
 ?>
 
                                    <!-- <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button> -->
-                                   <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+                                   <script src="https://www.mercadopago.com.pe/integrations/v1/web-payment-checkout.js" data-preference-id="<?php echo $preference->init_point; ?>"></script>
                                    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
                                 </div>
                             </div>
