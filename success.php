@@ -40,6 +40,6 @@ MercadoPago\SDK::setAccessToken('APP_USR-8208253118659647-112521-dd670f3fd6aa914
     }*/
 
     $payment = MercadoPago\Payment.find_by_id($_GET['payment_id']);
-    
 
+    echo  $payment;
 ?>
