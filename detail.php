@@ -194,7 +194,7 @@ $preference->payment_methods = array(
     "pending" => "https://rayd1893-mp-commerce-php.herokuapp.com/pending.php"
 );
 $preference->auto_return = "approved";
-$preference->notification_url = "https://rayd1893-mp-commerce-php.herokuapp.com/andra_notificaciones_prod?source_news=webhooks";
+$preference->notification_url = "https://rayd1893-mp-commerce-php.herokuapp.com/andra_notificaciones_prod.php?source_news=webhooks";
 
   $preference->external_reference = "rayd1893@gmail.com";
 
@@ -202,7 +202,7 @@ $preference->save();
 ?>
 
                                    <!-- <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button> -->
-                                   <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+                                   <script src="https://www.mercadopago.com.pe/integrations/v1/web-payment-checkout.js" data-button-label="Pagar la compra" data-preference-id="<?php echo $preference->id; ?>"></script>
                                    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
                                 </div>
                             </div>
