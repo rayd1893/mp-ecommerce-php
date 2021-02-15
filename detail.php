@@ -189,9 +189,9 @@ $preference->payment_methods = array(
  //Back_url´s
  
  $preference->back_urls = array(
-    "success" => "https://rayd1893-mp-commerce-php.herokuapp.com/success",
-    "failure" => "https://rayd1893-mp-commerce-php.herokuapp.com/failure",
-    "pending" => "https://rayd1893-mp-commerce-php.herokuapp.com/pending"
+    "success" => "https://rayd1893-mp-commerce-php.herokuapp.com/success.php",
+    "failure" => "https://rayd1893-mp-commerce-php.herokuapp.com/failure.php",
+    "pending" => "https://rayd1893-mp-commerce-php.herokuapp.com/pending.php"
 );
 $preference->auto_return = "approved";
 
