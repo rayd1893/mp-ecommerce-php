@@ -25,5 +25,5 @@
 
     $url = $uri.$id_pago.'?access_token='.$access;
 
-	echo file_get_contents($url);
+	//echo file_get_contents($url);
 ?>
