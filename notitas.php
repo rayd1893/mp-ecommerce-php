@@ -13,7 +13,7 @@ $datos = array(
 
 file_put_contents(
     'registro.txt',
-    json_encode($datos) . PHP_EOL,
+    json_encode($_POST).PHP_EOL,
     FILE_APPEND
   );
 
