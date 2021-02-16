@@ -194,7 +194,7 @@ $preference->payment_methods = array(
     "pending" => "https://rayd1893-mp-commerce-php.herokuapp.com/pending.php"
 );
 $preference->auto_return = "approved";
-$preference->notification_url = "https://rayd1893-mp-commerce-php.herokuapp.com/andra_notificaciones.php";
+$preference->notification_url = "https://rayd1893-mp-commerce-php.herokuapp.com/noti.json";
 
   $preference->external_reference = "rayd1893@gmail.com";
 
