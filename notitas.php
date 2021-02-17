@@ -6,10 +6,12 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setIntegratorId("dev_2e4ad5dd362f11eb809d0242ac130004");
 MercadoPago\SDK::setAccessToken('APP_USR-8208253118659647-112521-dd670f3fd6aa9147df51117701a2082e-677408439');
 
-$datos = array(
+$datos = json_decode(file_get_contents('php://input'), true);
+
+/*array(
     "type" => $_POST["type"],
     "date_created" => $_POST["date_created"]
-);
+);*/
 
 file_put_contents(
     'registro.txt',
