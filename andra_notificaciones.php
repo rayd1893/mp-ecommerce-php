@@ -1,4 +1,5 @@
 <?php
+var_dump(http_response_code(201));
 
 $uri = 'https://api.mercadopago.com/v1/payments/';
 $id_pago = $_POST['id'];
